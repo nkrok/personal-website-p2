@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 23px; /* 18 / 16 = 1.125 */
+  font-size: 18px;
   line-height: 28px;
   padding: 14px;
 }
@@ -39,4 +39,18 @@ h5 {
 
 h6 {
   font-size: 0.8em;
+}
+
+/* IDs */
+
+#nav li {
+  display: inline;
+}
+
+#main-header {
+  margin-bottom: 1em;
+}
+
+#main-footer {
+  margin-top: 1em;
 }
