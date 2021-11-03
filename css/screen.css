@@ -15,18 +15,29 @@ html {
   padding: 14px;
 }
 
-/* Style headers */
+section {
+  padding: 1em 0;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+/* Headings */
 
 h1 {
   font-size: 2em;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.3em;
+  font-weight: bold;
 }
 
 h4 {
@@ -39,6 +50,17 @@ h5 {
 
 h6 {
   font-size: 0.8em;
+}
+
+/* Classes */
+
+.content {
+  margin-top: 3em;
+  padding: 0 0.5em;
+}
+
+.centered-text {
+  text-align: center;
 }
 
 /* IDs */
