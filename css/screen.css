@@ -59,6 +59,10 @@ h6 {
   font-weight: bold;
 }
 
+figure video {
+  max-width: 100%;
+}
+
 /* Classes */
 
 .centered-text {
