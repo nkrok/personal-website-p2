@@ -10,8 +10,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .html {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125em;
+  line-height: 1.5em;
   padding: 1em;
   background-color: #f3f3f3;
 }
@@ -66,7 +66,8 @@ h6 {
 }
 
 .resume-experience-entry {
-  border: solid black;
+  border-left: solid black;
+  background-color: #e3e3e3;
 }
 
 .hor-list li {
@@ -116,7 +117,23 @@ h6 {
   margin-top: 1em;
 }
 
-@media screen and (min-width: 900px) {
+#projects {
+  margin-top: 1em;
+}
+
+#projects article {
+  border-left: solid black;
+  background-color: #e3e3e3;
+  padding: 0 0.25em;
+}
+
+#projects article ul {
+  color: #646464;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 57em) {
   #main-header {
     display: flex;
     justify-content: space-between;
@@ -125,9 +142,19 @@ h6 {
   #nav {
     margin-top: 0;
   }
+
+  #projects {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  #projects article {
+    width: 45vw;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75em) {
   #resume-content {
     display: flex;
     justify-content: space-between;
@@ -145,5 +172,9 @@ h6 {
 
   #resume-skills {
     width: 35vw;
+  }
+
+  #projects article {
+    width: 30vw;
   }
 }
