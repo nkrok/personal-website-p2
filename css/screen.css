@@ -8,12 +8,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
-.html {
+html {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 1.125em;
   line-height: 1.5em;
-  padding: 1em;
   background-color: #f3f3f3;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -64,6 +70,11 @@ figure video {
 }
 
 /* Classes */
+
+.content {
+  padding: 1em;
+  flex: 1 0 auto;
+}
 
 .centered-text {
   text-align: center;
@@ -120,26 +131,34 @@ figure video {
 
 #nav a {
   text-decoration: none;
-  background-color: #111111;
-  color: white;
-  padding: 0.25em;
-  border: thin solid #333333;
+  background-color: #FCA311;
+  color: black;
+  padding: 0.35em;
+  border: thin solid #6e4706;
 }
 
 #nav a:hover {
-  background-color: #333333;
+  background-color: #f5ca85;
 }
 
 #nav a:active {
-  background-color: #777777;
+  background-color: #6e4706;
 }
 
 #main-header {
+  padding: 1em;
   margin-bottom: 1em;
+  background-color: #14213D;
+  color: white;
 }
 
 #main-footer {
+  padding: 1em;
   margin-top: 1em;
+  flex-shrink: 0;
+
+  background-color: #14213D;
+  color: white;
 }
 
 #project-weatherapp img {
