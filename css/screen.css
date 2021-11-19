@@ -74,6 +74,11 @@ figure video {
   background-color: #e3e3e3;
 }
 
+.resume-education-entry {
+  border-left: solid black;
+  background-color: #e3e3e3;
+}
+
 .hor-list li {
   display: inline-block;
   outline: thin solid;
@@ -94,7 +99,7 @@ figure video {
 
 #nav li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 #nav a {
@@ -135,6 +140,10 @@ figure video {
   color: #646464;
   display: flex;
   justify-content: space-between;
+}
+
+#project-weatherapp img {
+  width: 49%;
 }
 
 @media screen and (min-width: 57em) {
