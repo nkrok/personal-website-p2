@@ -91,6 +91,22 @@ figure video {
   padding-left: 0.25em;
 }
 
+.projects {
+  margin-top: 1em;
+}
+
+.projects article {
+  border-left: solid black;
+  background-color: #e3e3e3;
+  padding: 0 0.25em;
+}
+
+.projects article ul {
+  color: #646464;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* IDs */
 
 #nav {
@@ -126,22 +142,6 @@ figure video {
   margin-top: 1em;
 }
 
-#projects {
-  margin-top: 1em;
-}
-
-#projects article {
-  border-left: solid black;
-  background-color: #e3e3e3;
-  padding: 0 0.25em;
-}
-
-#projects article ul {
-  color: #646464;
-  display: flex;
-  justify-content: space-between;
-}
-
 #project-weatherapp img {
   width: 49%;
 }
@@ -156,13 +156,13 @@ figure video {
     margin-top: 0;
   }
 
-  #projects {
+  .projects {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
   }
 
-  #projects article {
+  .projects article {
     width: 45vw;
   }
 }
@@ -187,7 +187,7 @@ figure video {
     width: 35vw;
   }
 
-  #projects article {
+  #all-projects article {
     width: 30vw;
   }
 }
