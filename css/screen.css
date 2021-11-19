@@ -11,12 +11,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .html {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 18px;
-  line-height: 28px;
-  padding: 14px;
+  line-height: 24px;
+  padding: 1em;
+  background-color: #f3f3f3;
 }
 
 section {
-  padding: 1em 0;
+  margin-bottom: 1em;
 }
 
 article {
@@ -26,47 +27,85 @@ article {
 /* Headings */
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
+  margin-bottom: 0.4em;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: bold;
+  margin-bottom: 0.3em;
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 h5 {
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 h6 {
-  font-size: 0.8em;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 /* Classes */
-
-.content {
-  margin-top: 3em;
-  padding: 0 0.5em;
-}
 
 .centered-text {
   text-align: center;
 }
 
+.resume-experience-entry {
+  border: solid black;
+}
+
+.hor-list li {
+  display: inline-block;
+  outline: thin solid;
+  padding: 0.1em;
+}
+
+.bullet-list {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0.25em;
+}
+
 /* IDs */
 
+#nav {
+  margin-top: 1em;
+}
+
 #nav li {
-  display: inline;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+#nav a {
+  text-decoration: none;
+  background-color: #111111;
+  color: white;
+  padding: 0.25em;
+  border: thin solid #333333;
+}
+
+#nav a:hover {
+  background-color: #333333;
+}
+
+#nav a:active {
+  background-color: #777777;
 }
 
 #main-header {
@@ -75,4 +114,36 @@ h6 {
 
 #main-footer {
   margin-top: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  #main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #resume-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 1em;
+  }
+
+  #resume-experience {
+    width: 60vw;
+  }
+
+  #resume-education {
+    width: 35vw;
+  }
+
+  #resume-skills {
+    width: 35vw;
+  }
 }
