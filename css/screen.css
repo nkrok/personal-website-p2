@@ -111,6 +111,10 @@ figure video {
   border-left: solid black;
   background-color: #e3e3e3;
   padding: 0 0.25em;
+  overflow: hidden;
+
+  height: 100%;
+  transition: max-height 0.2s ease-in;
 }
 
 .projects article ul {
@@ -172,6 +176,18 @@ figure video {
 
 #project-weatherapp img {
   height: 19.611em;
+}
+
+#featured-projects figure {
+  display: none;
+}
+
+#featured-projects article:hover {
+  background-color: #d8d8d8;
+}
+
+#featured-projects article:active {
+  background-color: #cfcfcf;
 }
 
 @media screen and (min-width: 57em) {
