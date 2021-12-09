@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 1.125em;
-  line-height: 1.5em;
+  line-height: 1.333em;
   background-color: #f3f3f3;
   height: 100%;
 }
@@ -23,56 +23,57 @@ body {
 }
 
 section {
-  /* margin-bottom: 1em; */
+  margin-bottom: 1.333em;
 }
 
 article {
-  /* margin-bottom: 1em; */
+  margin-bottom: 1.333em;
 }
 
 /* Headings */
 
 h1 {
-  /* font-size: 2.5em; */
+  font-size: 3em;
   font-weight: bold;
-  /* margin-bottom: 0.5em; */
+  margin-bottom: 0.433em;
 }
 
 h2 {
-  /* font-size: 2em; */
+  font-size: 2.25em;
   font-weight: bold;
   /* margin-bottom: 0.4em; */
 }
 
 h3 {
-  /* font-size: 1.6em; */
+  font-size: 1.8em;
   font-weight: bold;
-  /* margin-bottom: 0.3em; */
+  margin-bottom: 0.73em;
 }
 
 h4 {
-  /* font-size: 1.2em; */
+  font-size: 1.2em;
   font-weight: bold;
 }
 
 h5 {
-  /* font-size: 1.1em; */
+  font-size: 1.1em;
   font-weight: bold;
 }
 
 h6 {
-  /* font-size: 1em; */
+  font-size: 1em;
   font-weight: bold;
 }
 
 figure video {
-  max-width: 100%;
+  height: 13em;
+  width: 100%;
 }
 
 /* Classes */
 
 .content {
-  /* padding: 1em; */
+  padding: 1.333em 1em;
   flex: 1 0 auto;
 }
 
@@ -93,7 +94,7 @@ figure video {
 .hor-list li {
   display: inline-block;
   outline: thin solid;
-  /* padding: 0.1em; */
+  padding: 0 0.15em;
 }
 
 .bullet-list {
@@ -103,7 +104,7 @@ figure video {
 }
 
 .projects {
-  /* margin-top: 1em; */
+  margin-top: 1.333em;
 }
 
 .projects article {
@@ -121,19 +122,19 @@ figure video {
 /* IDs */
 
 #nav {
-  /* margin-top: 1em; */
+  margin-top: 1.333em;
 }
 
 #nav li {
   display: inline-block;
-  /* font-size: 1.25em; */
+  font-size: 1.125em;
 }
 
 #nav a {
   text-decoration: none;
   background-color: #FCA311;
   color: black;
-  /* padding: 0.35em; */
+  padding: 0.35em;
   border: thin solid #6e4706;
 }
 
@@ -146,23 +147,31 @@ figure video {
 }
 
 #main-header {
-  /* padding: 1em; */
-  /* margin-bottom: 1em; */
+  padding: 1em;
+  margin-bottom: 0.667em;
   background-color: #14213D;
   color: white;
 }
 
 #main-footer {
-  /* padding: 1em; */
-  /* margin-top: 1em; */
+  padding: 1.333em;
+  margin-top: 1.333em;
   flex-shrink: 0;
 
   background-color: #14213D;
   color: white;
 }
 
+#project-weatherapp figure {
+  text-align: center;
+}
+
+#project-weatherapp figcaption {
+  text-align: left;
+}
+
 #project-weatherapp img {
-  width: 49%;
+  height: 19.611em;
 }
 
 @media screen and (min-width: 57em) {
@@ -186,7 +195,7 @@ figure video {
   }
 }
 
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 85em) {
   #resume-content {
     display: flex;
     justify-content: space-between;
