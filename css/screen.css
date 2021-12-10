@@ -113,8 +113,7 @@ figure video {
   padding: 0 0.25em;
   overflow: hidden;
 
-  height: 100%;
-  transition: max-height 0.2s ease-in;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .projects article ul {
@@ -178,8 +177,13 @@ figure video {
   height: 19.611em;
 }
 
-#featured-projects figure {
-  display: none;
+#featured-projects article {
+  height: 100%;
+  max-height: 5.333em;
+}
+
+#featured-projects article.expanded {
+  max-height: 50em;
 }
 
 #featured-projects article:hover {
